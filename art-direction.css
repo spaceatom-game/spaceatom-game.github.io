@@ -40,6 +40,7 @@ body::before { background-image:repeating-linear-gradient(90deg,transparent 0 13
 .brand-logo-official[hidden] { display:none!important; }
 .brand.official-ready > svg,.brand.official-ready > span,.footer-brand.official-ready > span { display:none; }
 .brand.official-ready,.footer-brand.official-ready { letter-spacing:normal; }
+.footer-brand.official-ready { font-size:0; }
 .brand-logo-official:not([hidden]) { display:block; height:42px; width:auto; max-width:min(230px,44vw); object-fit:contain; }
 .footer-brand .brand-logo-official:not([hidden]) { height:45px; max-width:250px; }
 .section-characters,.section-screenshots { position:relative; }

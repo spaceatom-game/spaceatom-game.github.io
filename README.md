@@ -1,89 +1,52 @@
-# SpaceAtom — pitch website
+# SpaceAtom — official game artwork website
 
-Responsive, standalone GitHub Pages website for **SpaceAtom**, an independently
-developed Godot space-action game. This version adds an art-first presentation,
-a real-logo integration, official character portraits, and a gameplay screenshot
-gallery, with **real assets required** before those galleries appear.
+The static pitch site for **[SpaceAtom](https://spaceatom-game.github.io/)**, a solo-developed, mobile-first space shooter built in Godot.
 
-## Preview locally
+This website now uses **original game assets** from the private `spaceatom-game/spaceatom` repository. It presents the game's actual character portraits, app monogram, player ship vectors, boss ship, and Verdant Prime cloud background.
 
-```sh
+## Preview
+
+```bash
 python3 -m http.server 8000
 ```
 
-Open <http://localhost:8000>. No JavaScript framework, package manager, build
-process, or API key is required.
+Open <http://localhost:8000>. The site needs no build step, bundler, JavaScript framework, or access to private GitHub resources at runtime. All images used in `index.html` and `game-site.css` are committed locally.
 
-## Adding the official game artwork
+## Authentic artwork inventory
 
-**Status:** The private game source and its original character/logo images were
-not accessible to the GitHub connection during this change. Thus **no original
-game images have been copied to this branch yet**. The existing illustrated
-hero and outpost images are *concepts, not game screenshots*. They remain
-visibly labelled until approved source files are imported.
+| Website file | Source path in `spaceatom-game/spaceatom` |
+| --- | --- |
+| `assets/official/crew.png` | `assets/characters/crew.png` |
+| `assets/official/app.svg` | `assets/icons/app.svg` |
+| `assets/official/kestrel.svg` | `assets/ships/kestrel.svg` |
+| `assets/official/bulwark.svg` | `assets/ships/bulwark.svg` |
+| `assets/official/tempest.svg` | `assets/ships/tempest.svg` |
+| `assets/official/boss.svg` | `assets/ships/boss.svg` |
+| `assets/official/verdant-prime-cloud.png` | `assets/backgrounds/verdant-prime-cloud.png` |
+| `assets/official/admiral-ryker.webp` | `assets/characters/admiral_ryker.webp` |
 
-With an authorized local checkout of the **actual SpaceAtom game repository**,
-inspect filename-based asset candidates:
+Every copied file's Git blob SHA was checked against the original source; the source PNG for `crew.png` was recovered from the **original game's embedded character SVG**, which contains an identical copy.
 
-```sh
-python3 tools/import_game_assets.py --game-root /path/to/spaceatom --dry-run
-```
+### Character portraits
 
-The importer can suggest a logo, hero image and ally/enemy outpost art based
-on source image filenames. For accuracy, provide the real, verified paths
-explicitly, and add character portraits/screenshots:
+To avoid embedding four identical 1.6 MB PNGs, the page reuses `crew.png` with inline SVG crops. The exact view boxes come from `data/catalog.json` in the game repository:
 
-```sh
-python3 tools/import_game_assets.py --game-root /path/to/spaceatom \
-  --no-auto \
-  --logo assets/REAL-LOGO.png \
-  --hero assets/REAL-HERO.png \
-  --ally assets/REAL-ALLY-OUTPOST.png \
-  --enemy assets/REAL-ENEMY-OUTPOST.png \
-  --character "Character Name=assets/REAL-CHARACTER.png" \
-  --screenshot assets/REAL-SCREENSHOT.png
-```
+- Kai: `38 155 350 450`
+- Nova: `414 155 350 450`
+- Brix: `778 155 350 450`
+- Zee: `1147 155 350 450`
 
-Paths above are **examples, not actual verified game filenames**. Omit options
-without a verified asset; repeat `--character` and `--screenshot` as needed.
-Use the canonical names from the game for the character labels. The tool
-copies only images from inside the game checkout to `assets/official/` and
-creates the local `assets/official/media.json` manifest.
+All four use the same locally served PNG, and the crop elements are accessible via ARIA labels.
 
-Before committing the copied images, review their appearance, file sizes, and
-licenses. Never put private repository credentials in this website. The
-imported images will be publicly served by GitHub Pages.
+## Content notes
 
-## How the artwork presentation works
+- The website focuses on **two playable pilots**, **three ship classes**, **four elemental worlds**, and **twelve campaign routes**, as described by the native game source.
+- The hero poster is **official illustrated character art**, *not* a gameplay screenshot.
+- Enemy/allied outposts are explained in prose and interface motifs. The private game's large PNG outpost images and cover illustration are not included in this first original-assets PR.
+- Older experimental CSS, artwork, and image-manifest files remain in the repository for reference but **are not used by the new page**. The active entry points are `index.html` and `game-site.css`.
 
-- `index.html` defines hero/outpost fallback art and optional character and
-  screenshot galleries.
-- `styles.css` contains the base responsive layout.
-- `art-direction.css` adds the refreshed visual identity and image-first cards.
-- `scripts/game-art.js` loads only local paths in `assets/official/media.json`,
-  verifies each image can load, then updates the page. It never loads external
-  image sources or invents artwork.
-- Missing images leave the original concept art in place. Character and
-  screenshot sections stay hidden until corresponding real images are present.
-- `tools/import_game_assets.py` stages real images from an authorized checkout;
-  it does **not** access GitHub or require a token.
+## Deployment
 
-The site is intended for `https://spaceatom-game.github.io/` after merging
-into the upstream `main` branch.
+The upstream repository is `spaceatom-game/spaceatom-game.github.io`, with the public site served by GitHub Pages from the root of `main`. Changes should be made in a feature branch of `xmnlab/spaceatom-game.github.io`, based on upstream `main`, and proposed via a PR to the organization repository.
 
-## Visible visual-art showcase
-
-The `#artwork` gallery uses the **existing project concept illustrations**
-(`assets/hero-scene.svg`, `assets/outpost-ally.svg`, and
-`assets/outpost-enemy.svg`) in a visible, responsive layout. This is a
-promotional presentation of concepts, **not** a substitute for original character
-portraits, the game logo, or gameplay screenshots. The additional
-`visual-showcase.css` stylesheet provides the large-screen and mobile styles
-without changing the official-art import mechanism.
-
-**Still required for the requested original-assets update:** the private
-`spaceatom-game/spaceatom` game repository is not accessible from the connected
-GitHub integration. Once access exists, copy real images into
-`assets/official/` using the importer described above, update
-`assets/official/media.json`, and review screenshots and character names
-before publishing.
+After merging, check the Pages deployment and use a hard refresh if the browser still caches the previous CSS.

@@ -3,354 +3,199 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#080e1b">
-  <meta name="description" content="Meet SpaceAtom — a solo-developed space action game built with Godot. Navigate dangerous routes, discover ally and enemy outposts, and follow its journey toward an Android-first release.">
+  <meta name="theme-color" content="#07121f">
+  <meta name="description" content="SpaceAtom is an indie sci-fi space shooter built in Godot. Meet Kai, Nova, Brix and Zee. Build your ship, defend four worlds, and take on Commander Ant.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="SpaceAtom">
-  <meta property="og:title" content="SpaceAtom — Make every crossing count">
-  <meta property="og:description" content="One ship. Split-second decisions. A universe waiting to be explored. Discover the indie space-action game in development.">
+  <meta property="og:title" content="SpaceAtom — Small Crew. Big Universe.">
+  <meta property="og:description" content="Choose your pilot. Build your ship. Defend four worlds. A solo-developed space shooter for Android.">
   <meta property="og:url" content="https://spaceatom-game.github.io/">
-  <meta name="twitter:card" content="summary">
-  <title>SpaceAtom — Make every crossing count</title>
-  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:image" content="https://spaceatom-game.github.io/assets/official/crew.png">
+  <meta property="og:image:alt" content="Original SpaceAtom pixel-art poster featuring Kai, Nova, Brix, and Zee">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>SpaceAtom — Small Crew. Big Universe.</title>
+  <link rel="icon" href="./assets/official/app.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="stylesheet" href="./art-direction.css">
-  <link rel="stylesheet" href="./visual-showcase.css">
-  <script defer src="./scripts/game-art.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Oxanium:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./game-site.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="top-signal"><div class="container top-signal-inner"><span><i aria-hidden="true"></i> SPACEATOM / DEVELOPMENT TRANSMISSION</span><span>GODOT 4 · INDEPENDENT · MOBILE FIRST</span></div></div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#top" aria-label="SpaceAtom, back to top"><img src="./assets/official/app.svg" width="42" height="42" alt=""><span>SPACE<span>ATOM</span></span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#game">The game</a>
+      <a href="#crew">The crew</a>
+      <a href="#fleet">Your fleet</a>
+      <a href="#worlds">Four worlds</a>
+      <a href="#mission">The mission</a>
+    </nav>
+    <div class="header-right">
+      <a href="#contact" class="header-contact">FOLLOW DEVELOPMENT <span aria-hidden="true">↗</span></a>
+      <details class="mobile-nav">
+        <summary aria-label="Toggle navigation menu"><span></span><span></span><span></span></summary>
+        <nav aria-label="Mobile navigation">
+          <a href="#game">The game</a><a href="#crew">The crew</a><a href="#fleet">Your fleet</a><a href="#worlds">Four worlds</a><a href="#mission">The mission</a><a href="#contact">Follow development</a>
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="hero-sky" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="kicker"><span class="kicker-dot" aria-hidden="true"></span> THE INDEPENDENT SPACE SHOOTER <span class="kicker-count">/ 001</span></p>
+        <h1 id="hero-title">SMALL<br><span class="hero-outline">CREW.</span><br><span class="hero-gradient">BIG UNIVERSE.</span></h1>
+        <p class="hero-lead">Choose your pilot. Build your ship. Hold the line.</p>
+        <p class="hero-description">Meet <strong>SpaceAtom</strong> — a mobile-first sci-fi shooter where a colorful crew takes on relentless enemy waves across four elemental worlds. Keep your station standing, adapt your loadout, and take the fight to Commander Ant.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#crew">Meet the crew <span aria-hidden="true">↗</span></a>
+          <a class="button secondary" href="#game">Explore the game <span aria-hidden="true">↘</span></a>
+        </div>
+        <div class="hero-mini-facts"><span>SOLO DEVELOPED</span><span>BUILT IN GODOT</span><span>ANDROID FIRST</span></div>
+      </div>
+      <figure class="hero-poster">
+        <div class="hero-poster-top"><span class="indicator" aria-hidden="true"></span> SPACEATOM // ORIGINAL GAME ART</div>
+        <img src="./assets/official/crew.png" width="1536" height="1024" alt="Original SpaceAtom character art showing Kai the orange fox, Nova the purple fox, Brix the raccoon engineer, and Zee the blue bird shopkeeper." fetchpriority="high">
+        <figcaption><span>THE CREW // OFFICIAL ARTWORK</span><span>001 — 004</span></figcaption>
+        <span class="frame-corner frame-corner--one" aria-hidden="true"></span><span class="frame-corner frame-corner--two" aria-hidden="true"></span>
+      </figure>
+    </div>
+    <div class="container hero-discovery"><span>TRANSMISSION 001 / INTRODUCING SPACEATOM</span><span class="hero-discovery-line" aria-hidden="true"></span><a href="#game">SCROLL TO DISCOVER ↓</a></div>
+  </section>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="SpaceAtom, back to top">
-        <svg aria-hidden="true" viewBox="0 0 48 48" width="38" height="38" fill="none">
-          <circle cx="24" cy="24" r="5" fill="#caff80"/>
-          <ellipse cx="24" cy="24" rx="21" ry="9" transform="rotate(43 24 24)" stroke="#caff80" stroke-width="2.2"/>
-          <ellipse cx="24" cy="24" rx="21" ry="9" transform="rotate(-43 24 24)" stroke="#8b91ff" stroke-width="2.2"/>
-          <circle cx="37" cy="37" r="3.5" fill="#8b91ff"/>
-        </svg>
-        <span>SPACE<span class="brand-accent">ATOM</span></span>
-        <img class="brand-logo-official" data-official-art="logo" alt="SpaceAtom official logo" hidden>
-      </a>
-      <nav class="desktop-nav" aria-label="Main navigation">
-        <a href="#overview">The game</a>
-        <a href="#gameplay">How it plays</a>
-        <a href="#characters" data-characters-link hidden>Characters</a>
-        <a href="#outposts">Outposts</a>
-        <a href="#artwork">Visuals</a>
-        <a href="#development">Development</a>
-      </nav>
-      <div class="header-actions">
-        <a class="status" href="#development"><span class="status-dot" aria-hidden="true"></span> IN DEVELOPMENT</a>
-        <details class="mobile-menu">
-          <summary aria-label="Open navigation menu"><span></span><span></span><span></span></summary>
-          <nav aria-label="Mobile navigation">
-            <a href="#overview">The game</a>
-            <a href="#gameplay">How it plays</a>
-        <a href="#characters" data-characters-link hidden>Characters</a>
-            <a href="#outposts">Outposts</a>
-        <a href="#artwork">Visuals</a>
-            <a href="#development">Development</a>
-          </nav>
-        </details>
+  <div class="highlights" aria-label="Game at a glance"><div class="container highlights-grid">
+    <div><strong>02</strong><span>PLAYABLE PILOTS</span></div><div><strong>03</strong><span>SHIP CLASSES</span></div><div><strong>04</strong><span>ELEMENTAL WORLDS</span></div><div><strong>12</strong><span>CAMPAIGN ROUTES</span></div>
+  </div></div>
+
+  <section class="section game-section" id="game" aria-labelledby="game-heading">
+    <div class="container">
+      <div class="section-marker"><span>01 / GAMEPLAY</span><span>MISSION PARAMETERS</span></div>
+      <div class="section-heading split-heading">
+        <h2 id="game-heading">FAST REFLEXES.<br><em>SMARTER CHOICES.</em></h2>
+        <div><p class="heading-lead">A vertical space shooter with an entire universe of decisions beyond the battlefield.</p><p>Steer to survive, fire automatically, and unleash Overdrive when it counts. Between flights, choose your pilot, tune weapons and power-ups, and plan the next mission.</p></div>
+      </div>
+      <div class="how-grid">
+        <article class="how-card">
+          <div class="how-index">01 / STEER</div><div class="how-graphic graphic-steer"><span class="orbit" aria-hidden="true"></span><img src="./assets/official/kestrel.svg" alt="Kestrel player ship from SpaceAtom"></div>
+          <h3>TAKE CONTROL</h3><p>Move side to side through enemy fire. Your weapons auto-fire, leaving you to focus on movement, timing, and staying alive.</p>
+        </article>
+        <article class="how-card">
+          <div class="how-index">02 / CUSTOMIZE</div><div class="how-graphic graphic-tune"><span class="element-badge">H</span><span class="element-badge">C</span><span class="element-badge">Ne</span><span class="element-badge">Fe</span></div>
+          <h3>MAKE IT YOURS</h3><p>Pick from three ships, equip weapons and power-ups, and match elemental systems to the world ahead.</p>
+        </article>
+        <article class="how-card">
+          <div class="how-index">03 / DEFEND</div><div class="how-graphic graphic-defend"><img src="./assets/official/boss.svg" alt="Boss ship sprite from SpaceAtom"><span class="target-ring" aria-hidden="true"></span></div>
+          <h3>HOLD THE LINE</h3><p>Protect the allied station through three-wave patrol stages, then face Commander Ant in a final confrontation.</p>
+        </article>
       </div>
     </div>
-  </header>
+  </section>
 
-  <main id="main">
-    <section id="top" class="hero section-shell" aria-labelledby="hero-title">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> INDEPENDENT SPACE ACTION <span class="eyebrow-no">/ 001</span></div>
-          <h1 id="hero-title">MAKE EVERY<br><span class="text-outline">CROSSING</span><br><span class="accent-line">COUNT<span class="period">.</span></span></h1>
-          <p class="hero-lead">One ship. Split-second decisions. A universe that never stands still.</p>
-          <p class="hero-description">Meet <strong>SpaceAtom</strong>, a solo-developed sci-fi action game where your route matters, friendly and hostile outposts change the stakes, and forward is the only way to go.</p>
-          <div class="hero-buttons">
-            <a class="button button-primary" href="#overview">Explore the game <span aria-hidden="true">↗</span></a>
-            <a class="button button-ghost" href="#development">Follow the mission <span aria-hidden="true">↘</span></a>
-          </div>
-          <div class="hero-footnote">
-            <span><i aria-hidden="true"></i> MADE WITH GODOT</span>
-            <span><i aria-hidden="true"></i> SOLO INDIE PROJECT</span>
-            <span><i aria-hidden="true"></i> ANDROID FIRST</span>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <div class="hero-art-edition" aria-hidden="true"><span class="hero-edition-number">S/A · 01</span><span>VISUAL FIELD RECORD</span></div>
-          <div class="visual-corner visual-corner--tl" aria-hidden="true"></div>
-          <div class="visual-corner visual-corner--br" aria-hidden="true"></div>
-          <img class="hero-art" data-official-art="hero" src="./assets/hero-scene.svg" alt="Concept illustration of a spaceship racing toward a luminous space outpost while another craft approaches in the distance.">
-          <div class="visual-topline"><span class="pulse-dot" aria-hidden="true"></span> TRANSMISSION // SPACEATOM</div>
-          <div class="visual-data" aria-hidden="true">
-            <span>SECTOR // UNKNOWN</span>
-            <span>ROUTE // ACTIVE</span>
-          </div>
-          <div class="art-disclaimer" data-art-caption="hero">ORIGINAL CONCEPT ART <span aria-hidden="true">/</span> NOT A GAMEPLAY SCREENSHOT</div>
-        </div>
+  <section class="section crew-section" id="crew" aria-labelledby="crew-heading">
+    <div class="container">
+      <div class="section-marker"><span>02 / THE CREW</span><span>MEET THE CHARACTERS</span></div>
+      <div class="section-heading crew-heading">
+        <h2 id="crew-heading">FOUR FACES.<br><em>ONE MISSION.</em></h2>
+        <p>They are the heart of SpaceAtom. Meet the pilots and allies who give the universe its personality — shown here with the original game portraits, cropped directly from the game's crew artwork.</p>
       </div>
-      <div class="hero-scroll"><span>SCROLL TO EXPLORE</span><span class="scroll-line" aria-hidden="true"></span></div>
-    </section>
-
-    <div class="signal-strip" aria-label="SpaceAtom highlights">
-      <div class="container signal-inner">
-        <span>SPACE ACTION</span><span class="signal-symbol" aria-hidden="true">✳</span>
-        <span>OUTPOST ENCOUNTERS</span><span class="signal-symbol" aria-hidden="true">✳</span>
-        <span>BUILT WITH GODOT</span><span class="signal-symbol" aria-hidden="true">✳</span>
-        <span>MADE BY ONE DEVELOPER</span>
+      <div class="crew-grid">
+        <article class="crew-card crew-kai">
+          <div class="crew-image"><svg viewBox="38 155 350 450" role="img" aria-label="Kai, orange fox pilot with a red scarf"><image href="./assets/official/crew.png" width="1536" height="1024"/></svg><span class="crew-image-index">PILOT // 01</span></div>
+          <div class="crew-info"><div class="crew-name"><h3>KAI</h3><span>SCOUT PILOT</span></div><p>Fast moves. Bold choices. Kai specializes in steering and rapid weapon cycling.</p></div>
+        </article>
+        <article class="crew-card crew-nova">
+          <div class="crew-image"><svg viewBox="414 155 350 450" role="img" aria-label="Nova, purple fox pilot with a dark scarf"><image href="./assets/official/crew.png" width="1536" height="1024"/></svg><span class="crew-image-index">PILOT // 02</span></div>
+          <div class="crew-info"><div class="crew-name"><h3>NOVA</h3><span>ACE PILOT</span></div><p>Precise shots. Brighter tomorrows. Nova brings higher damage and faster Overdrive gain.</p></div>
+        </article>
+        <article class="crew-card crew-brix">
+          <div class="crew-image"><svg viewBox="778 155 350 450" role="img" aria-label="Brix, raccoon engineer with amber goggles"><image href="./assets/official/crew.png" width="1536" height="1024"/></svg><span class="crew-image-index">SUPPORT // 01</span></div>
+          <div class="crew-info"><div class="crew-name"><h3>BRIX</h3><span>ENGINEER</span></div><p>Fixes today. Stronger tomorrow. Brix helps you get the most out of your equipment.</p></div>
+        </article>
+        <article class="crew-card crew-zee">
+          <div class="crew-image"><svg viewBox="1147 155 350 450" role="img" aria-label="Zee, blue bird shopkeeper with colorful feathers"><image href="./assets/official/crew.png" width="1536" height="1024"/></svg><span class="crew-image-index">SUPPORT // 02</span></div>
+          <div class="crew-info"><div class="crew-name"><h3>ZEE</h3><span>SHOPKEEPER</span></div><p>Rare finds. New horizons. Zee is your stop for new equipment and supplies.</p></div>
+        </article>
+      </div>
+      <div class="command-line">
+        <img src="./assets/official/admiral-ryker.webp" width="80" height="90" alt="Admiral Ryker's portrait from the SpaceAtom game">
+        <div><span class="command-label">A MESSAGE FROM COMMAND</span><p>The fight extends beyond the cockpit. SpaceAtom's growing cast includes Admiral Ryker — and the formidable Commander Ant.</p></div>
+        <span class="command-code" aria-hidden="true">COMMAND / ACTIVE</span>
       </div>
     </div>
+  </section>
 
-    <section id="overview" class="section section-overview" aria-labelledby="overview-heading">
-      <div class="container overview-grid">
-        <div>
-          <div class="section-label"><span>01</span> THE PREMISE</div>
-          <h2 id="overview-heading">A LITTLE SHIP.<br><span class="muted">A LOT ON THE LINE.</span></h2>
-        </div>
-        <div class="overview-copy">
-          <p class="large-copy">SpaceAtom is about the moments between <em>seeing a path</em> and <em>choosing it.</em></p>
-          <p>Navigate an ever-shifting encounter, spot the signals ahead, and decide how to move through the unknown. Allied and enemy outposts bring different implications for the journey — so positioning and timing matter.</p>
-          <div class="tag-row" aria-label="Game themes">
-            <span>ACTION</span><span>ROUTE CHOICES</span><span>SCI-FI</span><span>OUTPOSTS</span>
-          </div>
-        </div>
+  <section class="section fleet-section" id="fleet" aria-labelledby="fleet-heading">
+    <div class="container">
+      <div class="section-marker"><span>03 / THE FLEET</span><span>THREE WAYS TO FLY</span></div>
+      <div class="section-heading split-heading">
+        <h2 id="fleet-heading">FIND YOUR<br><em>FLIGHT STYLE.</em></h2><p>Every pilot needs the right ship. These are the actual ship designs used in SpaceAtom — from the balanced Kestrel to the relentless Tempest.</p>
       </div>
-      <div class="container">
-        <div class="transmission-panel">
-          <div class="transmission-copy">
-            <div class="mono-caption">FIELD NOTES / SIGNAL 0001</div>
-            <h3>READ THE SPACE<br>IN FRONT OF YOU.</h3>
-            <p>Not all openings lead to the same outcome. Learn to recognize the difference between an allied signal and a hostile one.</p>
-          </div>
-          <div class="route-graphic" aria-hidden="true">
-            <span class="route-line"></span>
-            <div class="route-node route-node--ally"><span>+</span><small>ALLY</small></div>
-            <div class="route-node route-node--player"><span>▲</span><small>YOU</small></div>
-            <div class="route-node route-node--enemy"><span>×</span><small>ENEMY</small></div>
-            <span class="route-coordinate">X: 04.92 &nbsp;&nbsp; Y: 71.03</span>
-          </div>
-        </div>
+      <div class="fleet-grid">
+        <article class="ship-card ship-kestrel"><div class="ship-status"><span>SHIP CLASS / 01</span><span>COMMON</span></div><div class="ship-image"><span class="ship-target" aria-hidden="true"></span><img src="./assets/official/kestrel.svg" width="192" height="192" loading="lazy" alt="Original Kestrel ship sprite from SpaceAtom"></div><div class="ship-desc"><h3>KESTREL</h3><p>Balanced and reliable. A versatile starting point for every new pilot.</p><span>ROLE — BALANCED STARTER</span></div></article>
+        <article class="ship-card ship-bulwark"><div class="ship-status"><span>SHIP CLASS / 02</span><span>RARE</span></div><div class="ship-image"><span class="ship-target" aria-hidden="true"></span><img src="./assets/official/bulwark.svg" width="192" height="192" loading="lazy" alt="Original Bulwark ship sprite from SpaceAtom"></div><div class="ship-desc"><h3>BULWARK</h3><p>Built to endure. A heavy defender for those who hold the front line.</p><span>ROLE — HEAVY DEFENDER</span></div></article>
+        <article class="ship-card ship-tempest"><div class="ship-status"><span>SHIP CLASS / 03</span><span>EPIC</span></div><div class="ship-image"><span class="ship-target" aria-hidden="true"></span><img src="./assets/official/tempest.svg" width="192" height="192" loading="lazy" alt="Original Tempest ship sprite from SpaceAtom"></div><div class="ship-desc"><h3>TEMPEST</h3><p>Speed and firepower. A fast attacker that rewards bold flying.</p><span>ROLE — FAST ATTACKER</span></div></article>
       </div>
-    </section>
-
-    <section id="gameplay" class="section section-gameplay" aria-labelledby="gameplay-heading">
-      <div class="container">
-        <div class="section-label"><span>02</span> THE EXPERIENCE</div>
-        <div class="section-head">
-          <h2 id="gameplay-heading">THINK FAST.<br><span class="muted">FLY FASTER.</span></h2>
-          <p>The concept is simple to grasp and built around staying alert. Read the field, choose your line, and react to what comes next.</p>
-        </div>
-        <div class="steps-grid">
-          <article class="step-card">
-            <div class="step-top"><span>01 / PILOT</span><span aria-hidden="true">↗</span></div>
-            <div class="step-illustration flight-lines" aria-hidden="true">
-              <span class="flight-orbit flight-orbit--one"></span><span class="flight-orbit flight-orbit--two"></span><span class="flight-ship">▲</span>
-            </div>
-            <h3>FIND YOUR LINE.</h3>
-            <p>Guide your ship through a world of moving decisions. Your approach to an encounter is part of the challenge.</p>
-          </article>
-          <article class="step-card">
-            <div class="step-top"><span>02 / READ</span><span aria-hidden="true">↗</span></div>
-            <div class="step-illustration signal-lines" aria-hidden="true">
-              <span class="signal-ring signal-ring--one"></span><span class="signal-ring signal-ring--two"></span><span class="signal-core">⌁</span>
-            </div>
-            <h3>SPOT THE SIGNAL.</h3>
-            <p>Watch for friendly and hostile outposts. Recognizing what lies ahead can change the path you take.</p>
-          </article>
-          <article class="step-card">
-            <div class="step-top"><span>03 / ADAPT</span><span aria-hidden="true">↗</span></div>
-            <div class="step-illustration adapt-lines" aria-hidden="true">
-              <span class="adapt-track adapt-track--a"></span><span class="adapt-track adapt-track--b"></span><span class="adapt-point">◆</span>
-            </div>
-            <h3>KEEP MOVING.</h3>
-            <p>React to the encounter and make your next move count. Staying ready is as important as moving forward.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="characters" class="section section-characters" aria-labelledby="characters-heading" hidden>
-      <div class="container">
-        <div class="section-label"><span>03A</span> SPACEATOM / THE CAST</div>
-        <div class="section-head">
-          <h2 id="characters-heading">MEET THE<br><span class="muted">CHARACTERS.</span></h2>
-          <p>Original characters from the world of SpaceAtom — artwork sourced from the actual game project.</p>
-        </div>
-        <div id="character-gallery" class="character-gallery" aria-label="Official SpaceAtom character artwork"></div>
-      </div>
-    </section>
-    <section id="screenshots" class="section section-screenshots" aria-labelledby="screenshots-heading" hidden>
-      <div class="container">
-        <div class="section-label"><span>03B</span> STRAIGHT FROM THE GAME</div>
-        <div class="section-head">
-          <h2 id="screenshots-heading">SEE THE<br><span class="muted">GAME IN ACTION.</span></h2>
-          <p>Actual development screenshots and captures, never manufactured gameplay imagery.</p>
-        </div>
-        <div id="screenshots-gallery" class="screenshots-grid" aria-label="SpaceAtom game screenshots"></div>
-      </div>
-    </section>
-
-    <section id="outposts" class="section section-outposts" aria-labelledby="outposts-heading">
-      <div class="container">
-        <div class="section-label"><span>03</span> THE OUTPOSTS</div>
-        <div class="section-head section-head--outposts">
-          <h2 id="outposts-heading">SAME UNIVERSE.<br><span class="muted">DIFFERENT SIGNALS.</span></h2>
-          <p>Two sides of a battlefield, each with its own visual language. Outposts are a key mechanic currently being developed for SpaceAtom.</p>
-        </div>
-        <div class="outpost-grid">
-          <article class="outpost-card outpost-card--ally">
-            <div class="outpost-art-wrap">
-              <img data-official-art="ally" src="./assets/outpost-ally.svg" loading="lazy" alt="Concept illustration of a teal allied outpost with an open energy barrier and a spaceship approaching.">
-              <span class="art-label" data-art-caption="ally">CONCEPT ART / ALLIED</span>
-            </div>
-            <div class="outpost-content">
-              <div class="outpost-heading"><span class="outpost-icon" aria-hidden="true">+</span><h3>ALLY OUTPOST</h3></div>
-              <p>A friendly signal on your route. Look for the opportunities that allied territory might offer as you pass through.</p>
-              <span class="outpost-type">SIGNAL TYPE <strong>FRIENDLY</strong></span>
-            </div>
-          </article>
-          <article class="outpost-card outpost-card--enemy">
-            <div class="outpost-art-wrap">
-              <img data-official-art="enemy" src="./assets/outpost-enemy.svg" loading="lazy" alt="Concept illustration of a crimson enemy outpost projecting a hazardous energy barrier toward an approaching ship.">
-              <span class="art-label" data-art-caption="enemy">CONCEPT ART / HOSTILE</span>
-            </div>
-            <div class="outpost-content">
-              <div class="outpost-heading"><span class="outpost-icon" aria-hidden="true">×</span><h3>ENEMY OUTPOST</h3></div>
-              <p>A hostile presence that demands attention. A route through enemy-controlled space carries a different kind of risk.</p>
-              <span class="outpost-type">SIGNAL TYPE <strong>HOSTILE</strong></span>
-            </div>
-          </article>
-        </div>
-        <p class="concept-note">Visuals on this website are illustrative concepts, not screenshots or a promise of final in-game appearance.</p>
-      </div>
-    </section>
-
-
-    <section id="artwork" class="section section-artwork" aria-labelledby="artwork-heading">
-      <div class="container">
-        <div class="section-label"><span>04</span> FROM THE VISUAL ARCHIVE</div>
-        <div class="artwork-heading-row">
-          <div>
-            <h2 id="artwork-heading">A WORLD IN<br><span class="artwork-gradient">THE MAKING.</span></h2>
-            <p class="artwork-intro">A closer look at the SpaceAtom project's currently available visual concepts. These are illustrations used to communicate the game’s direction, not captures of its playable build.</p>
-          </div>
-          <div class="artwork-issue" aria-label="Artwork collection number">
-            <span>FIELD ARCHIVE</span>
-            <strong>001<span class="artwork-suffix"> / 003</span></strong>
-            <span>SPACEATOM CONCEPTS</span>
-          </div>
-        </div>
-        <div class="artwork-showcase-grid">
-          <figure class="artwork-feature">
-            <div class="artwork-visual artwork-visual--feature">
-              <img src="./assets/hero-scene.svg" loading="lazy" alt="SpaceAtom concept illustration showing a ship flying toward a luminous space structure.">
-              <span class="artwork-crosshair artwork-crosshair--tl" aria-hidden="true"></span>
-              <span class="artwork-crosshair artwork-crosshair--br" aria-hidden="true"></span>
-              <span class="artwork-visual-index">VISUAL // 01</span>
-            </div>
-            <figcaption><span><strong>Into the unknown</strong><small>STARSHIP / ENVIRONMENT</small></span><span class="artwork-arrow" aria-hidden="true">↗</span></figcaption>
-          </figure>
-          <div class="artwork-side-stack">
-            <figure class="artwork-feature">
-              <div class="artwork-visual artwork-visual--side artwork-visual--ally">
-                <img src="./assets/outpost-ally.svg" loading="lazy" alt="Teal allied outpost concept illustration for SpaceAtom.">
-                <span class="artwork-visual-index">VISUAL // 02</span>
-              </div>
-              <figcaption><span><strong>Friendly territory</strong><small>ALLIED OUTPOST CONCEPT</small></span><span class="artwork-arrow" aria-hidden="true">↗</span></figcaption>
-            </figure>
-            <figure class="artwork-feature">
-              <div class="artwork-visual artwork-visual--side artwork-visual--enemy">
-                <img src="./assets/outpost-enemy.svg" loading="lazy" alt="Crimson enemy outpost concept illustration for SpaceAtom.">
-                <span class="artwork-visual-index">VISUAL // 03</span>
-              </div>
-              <figcaption><span><strong>Hostile territory</strong><small>ENEMY OUTPOST CONCEPT</small></span><span class="artwork-arrow" aria-hidden="true">↗</span></figcaption>
-            </figure>
-          </div>
-        </div>
-        <div class="artwork-footnote">
-          <span class="archive-signal" aria-hidden="true"></span>
-          <p>These illustrations are already part of this website repository. Official in-game characters, logo, and gameplay imagery will be shown only after the authentic files are imported from the game project.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="vision" class="section section-vision" aria-labelledby="vision-heading">
-      <div class="container">
-        <div class="vision-panel">
-          <div class="vision-orbit vision-orbit--outer" aria-hidden="true"></div>
-          <div class="vision-orbit vision-orbit--inner" aria-hidden="true"></div>
-          <div class="vision-planet" aria-hidden="true"></div>
-          <div class="vision-content">
-            <div class="section-label"><span>05</span> THE VISION</div>
-            <h2 id="vision-heading">SMALL TEAM.<br><span>BIG HORIZON.</span></h2>
-            <p>SpaceAtom is being created by one independent developer, with Godot at its core. The ambition is to make a distinctive, approachable space-action game with readable visual design, satisfying movement, and encounters that invite quick decisions.</p>
-            <p class="vision-signoff">An evolving indie project — built in the open spirit of making, testing, and improving.</p>
-          </div>
-          <div class="vision-index" aria-hidden="true">S/A — 004</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="development" class="section section-development" aria-labelledby="development-heading">
-      <div class="container">
-        <div class="section-label"><span>06</span> DEVELOPMENT STATUS</div>
-        <div class="section-head">
-          <h2 id="development-heading">THE MISSION<br><span class="muted">IS UNDERWAY.</span></h2>
-          <p>SpaceAtom is in active development. The plan is to keep iterating on the game, refining its systems, and building toward an initial Android release.</p>
-        </div>
-        <div class="development-grid">
-          <article class="development-card current">
-            <div class="development-marker"><span class="status-dot" aria-hidden="true"></span> RIGHT NOW</div>
-            <h3>BUILDING THE GAME</h3>
-            <p>A working project in Godot, with the core direction and outpost interactions being developed and iterated.</p>
-            <span class="dev-sequence">PHASE / 01</span>
-          </article>
-          <article class="development-card">
-            <div class="development-marker">UP NEXT</div>
-            <h3>REFINING THE FEEL</h3>
-            <p>Continuing to improve gameplay feedback, visual clarity, and the experience of navigating encounters.</p>
-            <span class="dev-sequence">PHASE / 02</span>
-          </article>
-          <article class="development-card">
-            <div class="development-marker">FIRST PLATFORM GOAL</div>
-            <h3>ANDROID FIRST</h3>
-            <p>Mobile is the intended starting point, with future updates and releases planned as the project grows.</p>
-            <span class="dev-sequence">PHASE / 03</span>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-cta" aria-labelledby="cta-heading">
-      <div class="container">
-        <div class="cta-panel">
-          <div class="cta-stars" aria-hidden="true"></div>
-          <div class="cta-content">
-            <span class="mono-caption">OPEN CHANNEL // SPACEATOM</span>
-            <h2 id="cta-heading">WANT TO BE PART<br>OF THE JOURNEY<span>?</span></h2>
-            <p>Whether you're a player, publisher, or fellow developer, there's room to follow the mission as SpaceAtom takes shape.</p>
-            <div class="cta-buttons">
-              <a class="button button-dark" href="https://github.com/spaceatom-game" target="_blank" rel="noopener noreferrer">Explore the project <span aria-hidden="true">↗</span></a>
-              <a class="button button-outline-dark" href="https://github.com/xmnlab" target="_blank" rel="noopener noreferrer">Meet the developer <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="cta-emblem" aria-hidden="true"><span>SA</span><i></i></div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <a class="footer-brand" href="#top">SPACE<span>ATOM</span><img class="brand-logo-official" data-official-art="logo" alt="SpaceAtom official logo" hidden></a>
-      <p>Independent space action. Built with Godot. Still evolving.</p>
-      <div class="footer-links"><a href="#top">Back to top ↑</a><a href="https://github.com/spaceatom-game" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
     </div>
-    <div class="container footer-bottom"><span>© 2026 SPACEATOM</span><span>MADE WITH CURIOSITY, ONE ITERATION AT A TIME.</span></div>
-  </footer>
+  </section>
+
+  <section class="section worlds-section" id="worlds" aria-labelledby="worlds-heading">
+    <div class="worlds-background" aria-hidden="true"></div>
+    <div class="container worlds-content">
+      <div class="section-marker"><span>04 / THE WORLDS</span><span>FOUR ELEMENTS · TWELVE MISSIONS</span></div>
+      <div class="section-heading split-heading">
+        <h2 id="worlds-heading">ONE GALAXY.<br><em>FOUR FRONTIERS.</em></h2><p>Each world comes with its own enemy profile and tactical challenges. Match your approach to the environment — or risk losing the station.</p>
+      </div>
+      <div class="world-grid">
+        <article class="world-card world-h"><div class="world-top"><span>WORLD / 01</span><strong>H</strong></div><h3>VERDANT<br>PRIME</h3><p>Lush landscapes under pressure from fast-moving scouts.</p><span class="world-tag">SCOUT-HEAVY</span></article>
+        <article class="world-card world-c"><div class="world-top"><span>WORLD / 02</span><strong>C</strong></div><h3>CARBON<br>VEIL</h3><p>Dense debris fields make defense and positioning essential.</p><span class="world-tag">ASTEROID-HEAVY</span></article>
+        <article class="world-card world-ne"><div class="world-top"><span>WORLD / 03</span><strong>Ne</strong></div><h3>NEON<br>TEMPEST</h3><p>Ion storms and bombers turn every gap into a decision.</p><span class="world-tag">BOMBER-HEAVY</span></article>
+        <article class="world-card world-fe"><div class="world-top"><span>WORLD / 04</span><strong>Fe</strong></div><h3>IRON<br>GRAVE</h3><p>Metallic ruins call for armor and decisive firepower.</p><span class="world-tag">TANK-HEAVY</span></article>
+      </div>
+      <p class="worlds-asset-note">Environment imagery in this section is sourced from SpaceAtom's Verdant Prime background artwork.</p>
+    </div>
+  </section>
+
+  <section class="section mission-section" id="mission" aria-labelledby="mission-heading">
+    <div class="container">
+      <div class="section-marker"><span>05 / YOUR OBJECTIVE</span><span>MISSION STATUS / ACTIVE</span></div>
+      <div class="section-heading split-heading">
+        <h2 id="mission-heading">THE STATION<br><em>IS COUNTING<br>ON YOU.</em></h2><p>Every flight is bigger than your ship. Protect allied station integrity, navigate friendly and hostile outposts, survive escalating waves, and face Commander Ant.</p>
+      </div>
+      <div class="mission-grid">
+        <article class="mission-ally"><span class="mission-top">01 / SUPPORT</span><div class="mission-symbol" aria-hidden="true">+</div><h3>ALLY OUTPOSTS</h3><p>Friendly positions and energy modifiers can help shape your route. Spot the signal and use the opportunity.</p><span class="mission-signal">SIGNAL: FRIENDLY</span></article>
+        <article class="mission-threat"><span class="mission-top">02 / THREAT</span><div class="mission-symbol" aria-hidden="true">×</div><h3>ENEMY OUTPOSTS</h3><p>Hostile structures and attacking ships make the battlefield dangerous. Defend your station, not just your hull.</p><span class="mission-signal">SIGNAL: HOSTILE</span></article>
+        <article class="mission-boss"><span class="mission-top">03 / FINAL ENCOUNTER</span><div class="boss-visual"><img src="./assets/official/boss.svg" width="192" height="192" loading="lazy" alt="The boss ship sprite used in SpaceAtom"><span class="boss-orbit" aria-hidden="true"></span></div><h3>COMMANDER ANT</h3><p>Survive changing attack phases and telegraphed volleys to finish your mission.</p><span class="mission-signal">STATUS: BOSS BATTLE</span></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="contact-panel">
+        <div class="contact-rings" aria-hidden="true"></div>
+        <div class="contact-main"><span class="contact-kicker">ONE DEVELOPER / ONE UNIVERSE / MANY MORE MISSIONS</span>
+          <h2 id="contact-heading">THE STORY<br>IS JUST<br><em>BEGINNING.</em></h2>
+          <p>SpaceAtom is an independent game in active development, built with Godot and headed toward an Android-first release. Follow the mission as the game evolves.</p>
+          <div class="contact-actions"><a class="button dark" href="https://github.com/spaceatom-game" target="_blank" rel="noopener noreferrer">Explore the project <span aria-hidden="true">↗</span></a><a class="button outline-dark" href="https://github.com/xmnlab" target="_blank" rel="noopener noreferrer">Meet the developer <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <img class="contact-emblem" src="./assets/official/app.svg" width="250" height="250" loading="lazy" alt="">
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-primary">
+    <a class="brand footer-brand" href="#top"><img src="./assets/official/app.svg" width="38" height="38" alt=""><span>SPACE<span>ATOM</span></span></a>
+    <p>Small crew. Big universe. Built with Godot.</p>
+    <div class="footer-nav"><a href="#top">Back to top ↑</a><a href="https://github.com/spaceatom-game" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+  </div>
+  <div class="container footer-secondary"><span>© 2026 SPACEATOM</span><span>ORIGINAL GAME ART / SPACEATOM PROJECT</span></div>
+</footer>
 </body>
 </html>

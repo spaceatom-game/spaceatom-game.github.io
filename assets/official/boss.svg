@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 96 96">
+<defs><linearGradient id="hull" x2="0" y2="1"><stop stop-color="#b0c4d5"/><stop offset=".45" stop-color="#344b65"/><stop offset="1" stop-color="#101e34"/></linearGradient><linearGradient id="glass" x2="0" y2="1"><stop stop-color="#edffff"/><stop offset="1" stop-color="#ff496d"/></linearGradient></defs>
+<path d="M36 69 40 92 44 70 M52 70 56 92 60 69" fill="#ff496d" opacity=".65"/>
+<path d="M48 4 61 24 78 14 88 38 92 76 75 88 63 71 48 83 33 71 21 88 4 76 8 38 18 14 35 24Z" fill="url(#hull)" stroke="#091322" stroke-width="3" stroke-linejoin="round"/>
+<path d="M48 4 61 24 78 14 88 38 92 76 75 88 63 71 48 83 33 71 21 88 4 76 8 38 18 14 35 24Z" fill="none" stroke="#ff496d" stroke-width="1" stroke-linejoin="round"/>
+<path d="M48 13 59 48 55 69 41 69 37 48Z" fill="#22364d" stroke="#93acc0" stroke-width="1"/>
+<path d="M48 23 54 43 48 51 42 43Z" fill="url(#glass)" stroke="#0a1b2b" stroke-width="2"/>
+<path d="M21 54 35 61 33 69 22 65 M75 54 61 61 63 69 74 65" fill="#ff496d"/>
+<path d="M29 45 29 61 M67 45 67 61" stroke="#d5e7f1" stroke-width="3"/>
+<path d="M44 58H52 M43 63H53" stroke="#ff496d" stroke-width="2"/>
+<path d="M35 72H43 M53 72H61" stroke="#efffff" stroke-width="3"/>
+</svg>

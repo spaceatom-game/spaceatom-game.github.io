@@ -17,6 +17,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./art-direction.css">
+  <script defer src="./scripts/game-art.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -31,10 +33,12 @@
           <circle cx="37" cy="37" r="3.5" fill="#8b91ff"/>
         </svg>
         <span>SPACE<span class="brand-accent">ATOM</span></span>
+        <img class="brand-logo-official" data-official-art="logo" alt="SpaceAtom official logo" hidden>
       </a>
       <nav class="desktop-nav" aria-label="Main navigation">
         <a href="#overview">The game</a>
         <a href="#gameplay">How it plays</a>
+        <a href="#characters" data-characters-link hidden>Characters</a>
         <a href="#outposts">Outposts</a>
         <a href="#development">Development</a>
       </nav>
@@ -45,6 +49,7 @@
           <nav aria-label="Mobile navigation">
             <a href="#overview">The game</a>
             <a href="#gameplay">How it plays</a>
+        <a href="#characters" data-characters-link hidden>Characters</a>
             <a href="#outposts">Outposts</a>
             <a href="#development">Development</a>
           </nav>
@@ -74,13 +79,13 @@
         <div class="hero-visual">
           <div class="visual-corner visual-corner--tl" aria-hidden="true"></div>
           <div class="visual-corner visual-corner--br" aria-hidden="true"></div>
-          <img class="hero-art" src="./assets/hero-scene.svg" alt="Concept illustration of a spaceship racing toward a luminous space outpost while another craft approaches in the distance.">
+          <img class="hero-art" data-official-art="hero" src="./assets/hero-scene.svg" alt="Concept illustration of a spaceship racing toward a luminous space outpost while another craft approaches in the distance.">
           <div class="visual-topline"><span class="pulse-dot" aria-hidden="true"></span> TRANSMISSION // SPACEATOM</div>
           <div class="visual-data" aria-hidden="true">
             <span>SECTOR // UNKNOWN</span>
             <span>ROUTE // ACTIVE</span>
           </div>
-          <div class="art-disclaimer">ORIGINAL CONCEPT ART <span aria-hidden="true">/</span> NOT A GAMEPLAY SCREENSHOT</div>
+          <div class="art-disclaimer" data-art-caption="hero">ORIGINAL CONCEPT ART <span aria-hidden="true">/</span> NOT A GAMEPLAY SCREENSHOT</div>
         </div>
       </div>
       <div class="hero-scroll"><span>SCROLL TO EXPLORE</span><span class="scroll-line" aria-hidden="true"></span></div>
@@ -163,6 +168,28 @@
       </div>
     </section>
 
+
+    <section id="characters" class="section section-characters" aria-labelledby="characters-heading" hidden>
+      <div class="container">
+        <div class="section-label"><span>03A</span> SPACEATOM / THE CAST</div>
+        <div class="section-head">
+          <h2 id="characters-heading">MEET THE<br><span class="muted">CHARACTERS.</span></h2>
+          <p>Original characters from the world of SpaceAtom — artwork sourced from the actual game project.</p>
+        </div>
+        <div id="character-gallery" class="character-gallery" aria-label="Official SpaceAtom character artwork"></div>
+      </div>
+    </section>
+    <section id="screenshots" class="section section-screenshots" aria-labelledby="screenshots-heading" hidden>
+      <div class="container">
+        <div class="section-label"><span>03B</span> STRAIGHT FROM THE GAME</div>
+        <div class="section-head">
+          <h2 id="screenshots-heading">SEE THE<br><span class="muted">GAME IN ACTION.</span></h2>
+          <p>Actual development screenshots and captures, never manufactured gameplay imagery.</p>
+        </div>
+        <div id="screenshots-gallery" class="screenshots-grid" aria-label="SpaceAtom game screenshots"></div>
+      </div>
+    </section>
+
     <section id="outposts" class="section section-outposts" aria-labelledby="outposts-heading">
       <div class="container">
         <div class="section-label"><span>03</span> THE OUTPOSTS</div>
@@ -173,8 +200,8 @@
         <div class="outpost-grid">
           <article class="outpost-card outpost-card--ally">
             <div class="outpost-art-wrap">
-              <img src="./assets/outpost-ally.svg" loading="lazy" alt="Concept illustration of a teal allied outpost with an open energy barrier and a spaceship approaching.">
-              <span class="art-label">CONCEPT ART / ALLIED</span>
+              <img data-official-art="ally" src="./assets/outpost-ally.svg" loading="lazy" alt="Concept illustration of a teal allied outpost with an open energy barrier and a spaceship approaching.">
+              <span class="art-label" data-art-caption="ally">CONCEPT ART / ALLIED</span>
             </div>
             <div class="outpost-content">
               <div class="outpost-heading"><span class="outpost-icon" aria-hidden="true">+</span><h3>ALLY OUTPOST</h3></div>
@@ -184,8 +211,8 @@
           </article>
           <article class="outpost-card outpost-card--enemy">
             <div class="outpost-art-wrap">
-              <img src="./assets/outpost-enemy.svg" loading="lazy" alt="Concept illustration of a crimson enemy outpost projecting a hazardous energy barrier toward an approaching ship.">
-              <span class="art-label">CONCEPT ART / HOSTILE</span>
+              <img data-official-art="enemy" src="./assets/outpost-enemy.svg" loading="lazy" alt="Concept illustration of a crimson enemy outpost projecting a hazardous energy barrier toward an approaching ship.">
+              <span class="art-label" data-art-caption="enemy">CONCEPT ART / HOSTILE</span>
             </div>
             <div class="outpost-content">
               <div class="outpost-heading"><span class="outpost-icon" aria-hidden="true">×</span><h3>ENEMY OUTPOST</h3></div>
@@ -266,7 +293,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <a class="footer-brand" href="#top">SPACE<span>ATOM</span></a>
+      <a class="footer-brand" href="#top">SPACE<span>ATOM</span><img class="brand-logo-official" data-official-art="logo" alt="SpaceAtom official logo" hidden></a>
       <p>Independent space action. Built with Godot. Still evolving.</p>
       <div class="footer-links"><a href="#top">Back to top ↑</a><a href="https://github.com/spaceatom-game" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
     </div>

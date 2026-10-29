@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <title>SPACEATOM — cover A monogram</title>
+  <defs>
+    <radialGradient id="background" cx="50%" cy="42%" r="70%">
+      <stop stop-color="#10334c"/>
+      <stop offset="1" stop-color="#030b19"/>
+    </radialGradient>
+    <linearGradient id="cyan" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop stop-color="#00c8ea"/>
+      <stop offset=".65" stop-color="#22dcf3"/>
+      <stop offset="1" stop-color="#95f5ff"/>
+    </linearGradient>
+    <path id="letter" d="M244 112h24v12H244Z M244 124h24v12H244Z M232 136h48v12H232Z M232 148h48v12H232Z M220 160h72v12H220Z M220 172h72v12H220Z M208 184h96v12H208Z M208 196h96v12H208Z M196 208h120v12H196Z M196 220h48v12H196Z M268 220h48v12H268Z M184 232h60v12H184Z M268 232h60v12H268Z M184 244h48v12H184Z M280 244h48v12H280Z M172 256h60v12H172Z M280 256h60v12H280Z M172 268h48v12H172Z M292 268h48v12H292Z M160 280h60v12H160Z M292 280h60v12H292Z M160 292h48v12H160Z M304 292h48v12H304Z M148 304h60v12H148Z M304 304h60v12H304Z M148 316h48v12H148Z M316 316h48v12H316Z M136 328h60v12H136Z M316 328h60v12H316Z M136 340h48v12H136Z M328 340h48v12H328Z M124 352h60v12H124Z M328 352h60v12H328Z M124 364h48v12H124Z M340 364h48v12H340Z M112 376h60v12H112Z M340 376h60v12H340Z M112 388h48v12H112Z M352 388h48v12H352Z"/>
+  </defs>
+  <rect width="512" height="512" rx="104" fill="url(#background)"/>
+  <rect x="16" y="16" width="480" height="480" rx="90" fill="none" stroke="#21465c" stroke-width="2"/>
+  <use href="#letter" fill="none" stroke="#00c8ea" stroke-width="12" opacity=".08"/>
+  <use href="#letter" fill="url(#cyan)"/>
+  <path d="M250 316h12v12h12v12h-12v12h-12v-12h-12v-12h12Z" fill="#a4f8ff"/>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="456" viewBox="0 0 720 456">
+<defs>
+ <radialGradient id="bg"><stop stop-color="#16455b"/><stop offset="1" stop-color="#071525"/></radialGradient>
+ <radialGradient id="halo"><stop stop-color="#50fae3" stop-opacity=".24"/><stop offset="1" stop-color="#50fae3" stop-opacity="0"/></radialGradient>
+ <linearGradient id="frame" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#aaf9e8"/><stop offset=".5" stop-color="#5aa5bd"/><stop offset="1" stop-color="#31537d"/></linearGradient>
+ <linearGradient id="veil" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#88ffe0" stop-opacity=".21"/><stop offset=".5" stop-color="#5bd3f3" stop-opacity=".05"/><stop offset="1" stop-color="#7effd1" stop-opacity=".17"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="8" result="a"/><feMerge><feMergeNode in="a"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="720" height="456" fill="url(#bg)"/>
+<ellipse cx="380" cy="222" rx="240" ry="240" fill="url(#halo)"/>
+<g fill="#b7e5fa" opacity=".75"><circle cx="55" cy="46" r="1.5"/><circle cx="161" cy="99" r="1.4"/><circle cx="345" cy="42" r="1"/><circle cx="569" cy="58" r="2"/><circle cx="650" cy="142" r="1.4"/><circle cx="72" cy="302" r="1.2"/><circle cx="193" cy="387" r="2"/><circle cx="524" cy="382" r="1.5"/><circle cx="679" cy="358" r="1.6"/></g>
+<g opacity=".16" stroke="#8fd7dc" fill="none"><path d="M0 330L720 330M0 380L720 380M100 0V456M620 0V456"/><ellipse cx="355" cy="228" rx="264" ry="167" stroke-dasharray="10 14"/></g>
+<g transform="translate(360 227)">
+ <ellipse rx="191" ry="164" fill="#64ffdf" fill-opacity=".09" stroke="#5eeed8" stroke-width="5" filter="url(#glow)"/>
+ <path d="M-189 -86L-134 -158H134L189 -86V86L134 158H-134L-189 86Z" fill="url(#veil)" stroke="url(#frame)" stroke-width="18" stroke-linejoin="round"/>
+ <path d="M-171 -80L-126 -139H126L171 -80V80L126 139H-126L-171 80Z" stroke="#b9ffef" stroke-width="2" fill="none" opacity=".8"/>
+ <path d="M-153 -68L-113 -121H113L153 -68V68L113 121H-113L-153 68Z" stroke="#4de6d0" stroke-width="2" fill="none" stroke-dasharray="8 15"/>
+ <g fill="#789eae" stroke="#a9f2e3" stroke-width="3">
+  <path d="M-197 -123l-37 21v204l37 21 18 -31V-92Z"/>
+  <path d="M197 -123l37 21v204l-37 21 -18 -31V-92Z"/>
+  <path d="M-133 -168l25 -28h216l25 28 -13 12h-239Z"/>
+  <path d="M-133 168l25 28h216l25 -28 -13 -12h-239Z"/>
+ </g>
+ <g fill="#50ffcb" filter="url(#glow)"><rect x="-224" y="-52" width="10" height="104" rx="5"/><rect x="214" y="-52" width="10" height="104" rx="5"/><path d="M-60 -180h120v5H-60z"/><path d="M-60 175h120v5H-60z"/></g>
+ <path d="M-95 0H95M0 -99V99" stroke="#9af8e0" opacity=".35" stroke-width="2" stroke-dasharray="5 13"/>
+ <path d="M-96 -34h192M-96 34h192" stroke="#7affe0" opacity=".13" stroke-width="4"/>
+</g>
+<g transform="translate(360 364) scale(.65)">
+ <path d="M-18 21L-13 85 0 119 13 85 18 21Z" fill="#6af5dc" opacity=".5" filter="url(#glow)"/>
+ <path d="M0 -67L23 -16 27 26 0 41 -27 26 -23 -16Z" fill="#d0e9eb" stroke="#73e5dc" stroke-width="4"/>
+ <path d="M-25 0L-72 32 -60 57 -20 34M25 0L72 32 60 57 20 34" fill="#456b8b" stroke="#9bfff1" stroke-width="4"/>
+ <path d="M0 -44L10 -10 0 11 -10 -10Z" fill="#53ffdf"/>
+</g>
+<g font-family="monospace" fill="#7fc6cc" font-size="11" letter-spacing="2"><text x="24" y="30">SIGNAL 01 // ALLIED</text><text x="530" y="427">SA // FIELD CONCEPT</text></g>
+</svg>

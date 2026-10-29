@@ -43,7 +43,7 @@ button{font:inherit}
 .kicker-count{color:#758ca3}
 .hero h1{font:800 clamp(4.1rem,6.45vw,7.2rem)/.91 var(--title);letter-spacing:-.075em;white-space:nowrap;margin-bottom:27px}
 .hero-outline{color:transparent;-webkit-text-stroke:1.5px #d7e9f8}
-.hero-gradient{background:linear-gradient(93deg,var(--cyan) 6%,#97e9c4 46%,var(--lime));background-clip:text;-webkit-background-clip:text;color:transparent}
+.hero-gradient{background:linear-gradient(93deg,var(--cyan) 6%,#97e9c4 46%,var(--lime));background-clip:text;-webkit-background-clip:text;color:transparent;font-size:.76em;letter-spacing:-.067em}
 .hero-lead{font:600 clamp(21px,2.1vw,27px)/1.32 var(--title);letter-spacing:-.035em;margin-bottom:13px}
 .hero-description{max-width:510px;font-size:15px;line-height:1.87;color:#b9cddd;margin-bottom:30px}
 .hero-description strong{color:white}

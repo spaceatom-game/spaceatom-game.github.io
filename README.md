@@ -70,3 +70,20 @@ imported images will be publicly served by GitHub Pages.
 
 The site is intended for `https://spaceatom-game.github.io/` after merging
 into the upstream `main` branch.
+
+## Visible visual-art showcase
+
+The `#artwork` gallery uses the **existing project concept illustrations**
+(`assets/hero-scene.svg`, `assets/outpost-ally.svg`, and
+`assets/outpost-enemy.svg`) in a visible, responsive layout. This is a
+promotional presentation of concepts, **not** a substitute for original character
+portraits, the game logo, or gameplay screenshots. The additional
+`visual-showcase.css` stylesheet provides the large-screen and mobile styles
+without changing the official-art import mechanism.
+
+**Still required for the requested original-assets update:** the private
+`spaceatom-game/spaceatom` game repository is not accessible from the connected
+GitHub integration. Once access exists, copy real images into
+`assets/official/` using the importer described above, update
+`assets/official/media.json`, and review screenshots and character names
+before publishing.
